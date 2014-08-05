@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-ifneq ($(TARGET_SIMULATOR),true)
+# Disable racoon as it is shipped by Android itself.
+ifneq (1,1) # ($(TARGET_SIMULATOR),true)
 
 LOCAL_PATH := $(call my-dir)
 
